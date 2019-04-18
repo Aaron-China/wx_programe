@@ -1,0 +1,12 @@
+<!--折叠面板-->
+<view class="c-collapse">
+  <view class="cBox {{open ? 'open' : 'close'}}">
+    <view class="cHeader" bindtap="openOrClose">
+      <view class="cTitle">{{title}}</view>
+      <view class="cIcon"></view>
+    </view>
+    <view class="cContent">
+      <slot name="content"></slot>
+    </view>
+  </view>
+</view>

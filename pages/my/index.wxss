@@ -1,0 +1,30 @@
+.my-contain{
+  width: 100%;
+  background-color: #EDEDED;
+}
+.header{
+  width: 100%;
+  padding: 25px 35px;
+  background-color: white;
+  overflow: hidden;
+}
+.header .img {
+  float: left;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+}
+.content{
+  float: left;
+  margin-left: 20px;
+}
+.content .title{
+  margin-top: 7px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.content .subtitle{
+  margin-top: 7px;
+  font-size: 15px;
+  color: #7B7B7B;
+}

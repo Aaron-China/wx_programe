@@ -1,0 +1,47 @@
+<!--首页-->
+<view class="main-contain">
+  <view class="map">
+    <map
+      id="myMap"
+      style="width: 100%; height: 100%;"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      markers="{{markers}}"
+      scale="{{scale}}"
+      show-location
+      show-compass
+      bindmarkertap="showModal"
+      bindregionchange="closeModal"
+    >
+    </map>
+  </view>
+  <cover-view class="toolBar">
+    <cover-view>
+      <cover-image class="positionTool" src="../../image/dingwei.png"></cover-image>
+      <cover-view class="positionCover {{cover[0]}}" data-id="position" bindtap="goLocation"></cover-view>
+    </cover-view>
+    <cover-view>
+      <cover-image class="scanTool" src="../../image/saoma.png"></cover-image>
+      <cover-view class="scanCover {{cover[1]}}" data-id="scan" bindtap="scanCode"></cover-view>
+    </cover-view>
+    <cover-view>
+      <cover-image class="myTool" src="../../image/wode.png"></cover-image>
+      <cover-view class="myCover {{cover[2]}}" data-id="my" bindtap="goMy"></cover-view>
+    </cover-view>
+  </cover-view>
+
+  <cover-view class="marker {{!markerModal && 'markerActive'}}">
+    <cover-view class="header">
+      <cover-view class="item title">{{marker.name}}</cover-view>
+      <cover-view class="item subtitle">编号： {{marker.no}}</cover-view>
+    </cover-view>
+    <cover-view class="content">
+      <cover-view class="item status {{marker.status === 4 && 'finshed'}}">
+        状态： {{marker.statusText}}
+      </cover-view>
+      <cover-view class="item charge">当前电量： 230Kw·h</cover-view>
+    </cover-view>
+    <cover-image class="tool orderBtn" src="../../image/yuyuebtn.png" bindtap="orderPile" wx:if="{{marker.status === 1}}"></cover-image>
+    <cover-image class="tool goBtn" src="../../image/daohang.png"  bindtap="goMap"></cover-image>
+  </cover-view>
+</view>

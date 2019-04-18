@@ -1,0 +1,11 @@
+<!--我的-->
+<view class="my-contain">
+  <view class="header">
+    <image class="img" src="{{userInfo.avatarUrl}}"></image>
+    <view class="content">
+      <view class="title">{{userInfo.name}}</view>
+      <view class="subtitle">手机号: {{userInfo.phone}}</view>
+    </view>
+  </view>
+  <menu menuList="{{menuList}}"></menu>
+</view>

@@ -1,0 +1,21 @@
+{
+  "name": "battery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://116.62.243.143:3000/svwtech/chongdianzhuang.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "coordtransform": "^2.1.2",
+    "moment": "^2.24.0",
+    "weui-wxss": "^1.1.1"
+  },
+  "devDependencies": {}
+}

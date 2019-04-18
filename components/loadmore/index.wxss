@@ -1,0 +1,15 @@
+.c-loadmore{
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+.c-loadmore .icon {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  top: 4px;
+  left: -10px;
+}
+.c-loadmore .text {
+  font-size: 17px;
+}

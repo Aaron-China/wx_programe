@@ -1,0 +1,5 @@
+<!--上拉加载更多-->
+<view class="c-loadmore" hidden='{{hidden}}'>
+  <image class="icon" src='../../image/loading.gif' wx-if="{{iconShow}}" />
+  <text class="text">{{text}}</text>
+</view>

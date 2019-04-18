@@ -1,0 +1,4 @@
+<!--用户登录-->
+<view class="login">
+  <button class="login-btn" open-type="getUserInfo" bindgetuserinfo="login">登录</button>
+</view>

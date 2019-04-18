@@ -1,0 +1,10 @@
+<!--菜单组件-->
+<view class="c-menu">
+  <view wx:for="{{menuList}}" wx:key="{{item}}" class="menuItem">
+    <navigator url="/pages/my{{item.path}}" class="navigator">
+      <image class="imgIcon" src="{{item.icon}}"></image>
+      <view class="navigator-text" data-id="{{item.key}}" bindtap="handleMenuTap">{{item.name}}</view>
+    </navigator>
+    <image class="imgGo" src="../../image/youxiang.png"></image>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+.c-menu{
+  width: 100%;
+  background-color: white;
+  margin-top: 10px;
+}
+.menuItem{
+  position: relative;
+  box-sizing: border-box;
+}
+.navigator-text{
+  padding-left: 65px;
+}
+.navigator{
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 2px solid #F7F7F7;
+}
+.imgGo{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 22px;
+  right: 15px;
+}
+.imgIcon{
+ position: absolute;
+ width: 29px;
+ height: 29px;
+ top: 15px;
+ left: 18px;
+}
