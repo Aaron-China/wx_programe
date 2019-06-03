@@ -1,7 +1,7 @@
 {
   "pages":[
     "pages/main/index",
-    "pages/my/index",
+    "pages/my/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
